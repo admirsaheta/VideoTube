@@ -18,12 +18,21 @@ struct VideoFeedView: View {
             
             switch viewModel.state{
             case .success(let data):
-                VStack{
+                ScrollView{
+                
+                // Add LazyVStack for production
+                    
+                LazyVStack(alignment: .leading, spacing: 50){
                     ForEach(data, id: \.id){ video in
-                        Text(video.title)
+                        SingleVideoPostView(video: video)
+                            .padding(.bottom, 30)
                     }
                 }
-                .navigationBarTitle("Titles")
+                .frame(width: UIScreen.main.bounds.width)
+                .padding(.top, UIScreen.main.bounds.height / 6)
+            }
+                .navigationTitle("HulkTube")
+                
                 
             case .loading:
                 ProgressView()

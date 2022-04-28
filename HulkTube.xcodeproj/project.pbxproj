@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8453D37A2819FB9B007C8309 /* SingleVideoPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453D3792819FB9B007C8309 /* SingleVideoPostView.swift */; };
+		8453D37D281A0151007C8309 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453D37C281A0151007C8309 /* VideoPlayerView.swift */; };
 		84A3093E2815D80100893DD5 /* HulkTubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3093D2815D80100893DD5 /* HulkTubeApp.swift */; };
 		84A309402815D80100893DD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3093F2815D80100893DD5 /* ContentView.swift */; };
 		84A309422815D80200893DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A309412815D80200893DD5 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8453D3792819FB9B007C8309 /* SingleVideoPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVideoPostView.swift; sourceTree = "<group>"; };
+		8453D37C281A0151007C8309 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		84A3093A2815D80100893DD5 /* HulkTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HulkTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A3093D2815D80100893DD5 /* HulkTubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HulkTubeApp.swift; sourceTree = "<group>"; };
 		84A3093F2815D80100893DD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8453D3782819FB8B007C8309 /* Singles */ = {
+			isa = PBXGroup;
+			children = (
+				8453D3792819FB9B007C8309 /* SingleVideoPostView.swift */,
+			);
+			path = Singles;
+			sourceTree = "<group>";
+		};
+		8453D37B281A0137007C8309 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8453D37C281A0151007C8309 /* VideoPlayerView.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
 		84A309312815D80100893DD5 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +159,8 @@
 		84A3095E2815E6CC00893DD5 /* Dynamic */ = {
 			isa = PBXGroup;
 			children = (
+				8453D37B281A0137007C8309 /* VideoPlayer */,
+				8453D3782819FB8B007C8309 /* Singles */,
 				84A3095F2815E6E100893DD5 /* VideoFeedView.swift */,
 			);
 			path = Dynamic;
@@ -216,6 +238,8 @@
 			files = (
 				84A309582815DE1A00893DD5 /* VideoService.swift in Sources */,
 				84A309602815E6E100893DD5 /* VideoFeedView.swift in Sources */,
+				8453D37A2819FB9B007C8309 /* SingleVideoPostView.swift in Sources */,
+				8453D37D281A0151007C8309 /* VideoPlayerView.swift in Sources */,
 				84A309522815D89000893DD5 /* LaunchScreenView.swift in Sources */,
 				84A3095B2815E41000893DD5 /* VideoViewModel.swift in Sources */,
 				84A309552815DD9400893DD5 /* VideoModel.swift in Sources */,
@@ -359,6 +383,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -389,6 +414,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

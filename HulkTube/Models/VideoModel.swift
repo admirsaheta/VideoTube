@@ -19,7 +19,7 @@ struct VideoServiceResult: Codable {
 struct Video: Codable, Identifiable {
     let id = UUID()
     let videoDescription: String
-    let sources: [String]
+    let sources: String
     let subtitle: Subtitle
     let thumb, title: String
 
